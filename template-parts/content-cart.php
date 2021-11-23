@@ -1,0 +1,1 @@
+<?php print_r(WC()->cart->get_cart()); ?>
