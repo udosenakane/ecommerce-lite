@@ -29,8 +29,13 @@
         <?php endif ?>
     </div>
     <div class="mx-2 mb-2">
-        <a href="?add-to-cart=<?=$product->get_id(); ?>" class="btn btn-outline-warning w-100">
+        <!-- <a href="?add-to-cart=<?// =$product->get_id(); ?>" class="btn btn-outline-warning w-100">
             Add to Cart
-        </a>
+        </a> -->
+
+        <a href="?add-to-cart=<?=$product->get_id(); ?>" data-quantity="1" 
+        class="btn btn-outline-warning w-100 button product_type_simple add_to_cart_button ajax_add_to_cart added" 
+        data-product_id="<?=$product->get_id(); ?>" 
+        data-product_sku="woo-beanie" aria-label="Add “Beanie” to your cart" rel="nofollow">Add to cart</a>
     </div>
 </div>
